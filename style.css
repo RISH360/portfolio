@@ -3068,45 +3068,150 @@ video::-internal-media-controls-fullscreen-button {
     padding: 22px 16px;
   }
 
-  /* Contact & Form */
+  /* Contact Section: Initiate Collaboration & Send Message */
   .contact-layout {
     grid-template-columns: 1fr;
     gap: 24px;
+    width: 100%;
   }
-  .contact-card {
-    padding: 24px 16px;
+  .contact-info-panel,
+  .contact-form-panel {
+    padding: 24px 18px;
+    border-radius: var(--radius-md);
+    width: 100%;
   }
-  .contact-method-item {
-    padding: 14px 12px;
+  .contact-panel-title {
+    font-size: 1.35rem;
+    margin-bottom: 12px;
+  }
+  .contact-panel-intro {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 22px;
+  }
+  .contact-items-list {
     gap: 12px;
+    margin-bottom: 24px;
+    width: 100%;
   }
-  .contact-method-icon {
+  .contact-method-card {
+    padding: 14px 14px;
+    gap: 14px;
+    border-radius: var(--radius-sm);
+    width: 100%;
+  }
+  .method-icon {
     width: 42px;
     height: 42px;
     font-size: 1.1rem;
+    flex-shrink: 0;
   }
-  .contact-method-label {
-    font-size: 0.74rem;
+  .method-details {
+    overflow: hidden;
+    width: 100%;
   }
-  .contact-method-val {
+  .method-title {
+    font-size: 0.72rem;
+    margin-bottom: 2px;
+  }
+  .method-value {
     font-size: 0.88rem;
-    word-break: break-word;
+    word-break: break-all;
+    overflow-wrap: anywhere;
+  }
+  .contact-socials-box .social-label {
+    font-size: 0.82rem;
+    margin-bottom: 10px;
+  }
+  .contact-form {
+    gap: 16px;
+    width: 100%;
   }
   .form-row {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 14px;
+  }
+  .form-group {
+    gap: 6px;
+    width: 100%;
+  }
+  .form-group label {
+    font-size: 0.82rem;
+  }
+  .input-wrap {
+    padding: 12px 14px;
+    gap: 10px;
+    border-radius: var(--radius-sm);
+    width: 100%;
+  }
+  .input-wrap input,
+  .input-wrap select,
+  .input-wrap textarea {
+    font-size: 0.88rem;
+  }
+  .submit-btn {
+    width: 100%;
+    align-self: stretch;
+    justify-content: center;
+    padding: 13px 20px;
+    font-size: 0.95rem;
+    margin-top: 6px;
   }
 
-  /* Footer */
-  .footer-content {
+  /* Thank You Section Matching Mobile Proportion */
+  .thank-you-section {
+    padding: 60px 0 50px 0;
+    text-align: center;
+  }
+  .thank-you-mega-wrap {
+    gap: 18px;
+    width: 100%;
+    align-items: center;
+  }
+  .thank-you-title {
+    font-size: clamp(2.8rem, 14vw, 4.8rem);
+    line-height: 0.92;
+    text-align: center;
+    word-break: break-word;
+  }
+  .thank-you-subtext {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    max-width: 92%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .thank-you-actions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+  }
+  .back-to-top-btn {
+    width: 100%;
+    max-width: 240px;
+    justify-content: center;
+    padding: 12px 20px;
+    font-size: 0.9rem;
+    margin: 0 auto;
+  }
+
+  /* Footer Bottom */
+  .site-footer {
+    padding: 30px 0;
+  }
+  .footer-bottom {
     flex-direction: column;
     text-align: center;
-    gap: 18px;
+    gap: 16px;
+    font-size: 0.8rem;
+    line-height: 1.5;
   }
-  .footer-links {
+  .footer-quick-links {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 14px;
+    gap: 16px;
   }
 
   /* Modal Mobile Responsiveness */
@@ -3205,5 +3310,19 @@ video::-internal-media-controls-fullscreen-button {
   }
   .tool-name {
     font-size: 0.88rem;
+  }
+  .contact-info-panel,
+  .contact-form-panel {
+    padding: 20px 14px;
+  }
+  .contact-method-card {
+    padding: 12px 10px;
+    gap: 10px;
+  }
+  .method-value {
+    font-size: 0.82rem;
+  }
+  .thank-you-title {
+    font-size: clamp(2.5rem, 13.5vw, 3.6rem);
   }
 }
