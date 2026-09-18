@@ -629,7 +629,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <span style="font-family: var(--font-mono); font-size: 0.8rem; font-weight: 700; color: var(--cyan); background: rgba(6, 182, 212, 0.1); padding: 5px 12px; border-radius: 9999px; border: 1px solid rgba(6, 182, 212, 0.25);">
           ${data.category} • ${data.year}
         </span>
-        <h2 style="font-family: var(--font-heading); font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; color: #FFFFFF; margin: 12px 0 16px 0;">
+        <h2 class="modal-project-title" style="font-family: var(--font-heading); font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; color: #FFFFFF; margin: 12px 0 16px 0;">
           ${data.title}
         </h2>
       </div>
@@ -654,7 +654,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </ul>
       </div>
 
-      <div style="border-top: 1px solid var(--border-glass); padding-top: 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+      <div class="modal-footer-action-wrap" style="border-top: 1px solid var(--border-glass); padding-top: 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
         <div style="display: flex; gap: 8px; flex-wrap: wrap;">
           ${data.tools.map(t => `<span style="font-size: 0.8rem; font-family: var(--font-mono); background: rgba(255,255,255,0.06); padding: 5px 14px; border-radius: 6px; color: #E2E8F0; border: 1px solid var(--border-glass);">${t}</span>`).join('')}
         </div>
