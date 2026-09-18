@@ -12,117 +12,125 @@ document.addEventListener('DOMContentLoaded', () => {
   const canvas = document.getElementById('cursor-canvas');
   const ctx = canvas ? canvas.getContext('2d') : null;
 
-  let mouseX = window.innerWidth / 2;
-  let mouseY = window.innerHeight / 2;
-  let ringX = mouseX;
-  let ringY = mouseY;
-  let isMoving = false;
-  let moveTimeout;
+  const isTouchDevice = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0) || window.matchMedia('(hover: none)').matches || window.innerWidth <= 1024;
 
-  // Resize trail canvas
-  function resizeCanvas() {
-    if (!canvas) return;
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-  }
-  resizeCanvas();
-  window.addEventListener('resize', resizeCanvas);
+  if (isTouchDevice) {
+    if (cursorDot) cursorDot.remove();
+    if (cursorRing) cursorRing.remove();
+    if (canvas) canvas.remove();
+  } else {
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+    let ringX = mouseX;
+    let ringY = mouseY;
+    let isMoving = false;
+    let moveTimeout;
 
-  // Particles array for glowing trail
-  const particles = [];
-
-  class SparkParticle {
-    constructor(x, y) {
-      this.x = x;
-      this.y = y;
-      const angle = Math.random() * Math.PI * 2;
-      const speed = Math.random() * 2 + 0.5;
-      this.vx = Math.cos(angle) * speed;
-      this.vy = Math.sin(angle) * speed;
-      this.radius = Math.random() * 2.5 + 1;
-      this.alpha = 1;
-      this.decay = Math.random() * 0.03 + 0.02;
-      this.color = Math.random() > 0.5 ? '#06B6D4' : '#8B5CF6';
+    // Resize trail canvas
+    function resizeCanvas() {
+      if (!canvas) return;
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
     }
+    resizeCanvas();
+    window.addEventListener('resize', resizeCanvas);
 
-    update() {
-      this.x += this.vx;
-      this.y += this.vy;
-      this.alpha -= this.decay;
-    }
+    // Particles array for glowing trail
+    const particles = [];
 
-    draw(ctx) {
-      ctx.save();
-      ctx.globalAlpha = Math.max(0, this.alpha);
-      ctx.fillStyle = this.color;
-      ctx.shadowBlur = 8;
-      ctx.shadowColor = this.color;
-      ctx.beginPath();
-      ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-      ctx.fill();
-      ctx.restore();
-    }
-  }
+    class SparkParticle {
+      constructor(x, y) {
+        this.x = x;
+        this.y = y;
+        const angle = Math.random() * Math.PI * 2;
+        const speed = Math.random() * 2 + 0.5;
+        this.vx = Math.cos(angle) * speed;
+        this.vy = Math.sin(angle) * speed;
+        this.radius = Math.random() * 2.5 + 1;
+        this.alpha = 1;
+        this.decay = Math.random() * 0.03 + 0.02;
+        this.color = Math.random() > 0.5 ? '#06B6D4' : '#8B5CF6';
+      }
 
-  // Mouse Move listener
-  window.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
+      update() {
+        this.x += this.vx;
+        this.y += this.vy;
+        this.alpha -= this.decay;
+      }
 
-    if (cursorDot) {
-      cursorDot.style.left = `${mouseX}px`;
-      cursorDot.style.top = `${mouseY}px`;
-    }
-
-    // Spawn sparks on mouse movement
-    if (ctx && Math.random() > 0.3) {
-      particles.push(new SparkParticle(mouseX, mouseY));
-    }
-
-    isMoving = true;
-    clearTimeout(moveTimeout);
-    moveTimeout = setTimeout(() => { isMoving = false; }, 150);
-  });
-
-  // Animation Loop for Cursor Ring & Sparks
-  function animateCursor() {
-    // Smooth lerp for ring
-    const ease = 0.18;
-    ringX += (mouseX - ringX) * ease;
-    ringY += (mouseY - ringY) * ease;
-
-    if (cursorRing) {
-      cursorRing.style.left = `${ringX}px`;
-      cursorRing.style.top = `${ringY}px`;
-    }
-
-    // Render particles
-    if (ctx) {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      for (let i = particles.length - 1; i >= 0; i--) {
-        const p = particles[i];
-        p.update();
-        p.draw(ctx);
-        if (p.alpha <= 0) {
-          particles.splice(i, 1);
-        }
+      draw(ctx) {
+        ctx.save();
+        ctx.globalAlpha = Math.max(0, this.alpha);
+        ctx.fillStyle = this.color;
+        ctx.shadowBlur = 8;
+        ctx.shadowColor = this.color;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.restore();
       }
     }
 
-    requestAnimationFrame(animateCursor);
-  }
-  animateCursor();
+    // Mouse Move listener
+    window.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
 
-  // Cursor Hover expansion on interactive elements
-  const hoverElements = document.querySelectorAll('a, button, .magnetic-btn, .phone-mockup-frame, .laptop-mockup-frame, .poster-card-frame, .dock-item, .tool-card, .filter-btn');
-  hoverElements.forEach(el => {
-    el.addEventListener('mouseenter', () => {
-      if (cursorRing) cursorRing.classList.add('cursor-hover');
+      if (cursorDot) {
+        cursorDot.style.left = `${mouseX}px`;
+        cursorDot.style.top = `${mouseY}px`;
+      }
+
+      // Spawn sparks on mouse movement
+      if (ctx && Math.random() > 0.3) {
+        particles.push(new SparkParticle(mouseX, mouseY));
+      }
+
+      isMoving = true;
+      clearTimeout(moveTimeout);
+      moveTimeout = setTimeout(() => { isMoving = false; }, 150);
     });
-    el.addEventListener('mouseleave', () => {
-      if (cursorRing) cursorRing.classList.remove('cursor-hover');
+
+    // Animation Loop for Cursor Ring & Sparks
+    function animateCursor() {
+      // Smooth lerp for ring
+      const ease = 0.18;
+      ringX += (mouseX - ringX) * ease;
+      ringY += (mouseY - ringY) * ease;
+
+      if (cursorRing) {
+        cursorRing.style.left = `${ringX}px`;
+        cursorRing.style.top = `${ringY}px`;
+      }
+
+      // Render particles
+      if (ctx) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        for (let i = particles.length - 1; i >= 0; i--) {
+          const p = particles[i];
+          p.update();
+          p.draw(ctx);
+          if (p.alpha <= 0) {
+            particles.splice(i, 1);
+          }
+        }
+      }
+
+      requestAnimationFrame(animateCursor);
+    }
+    animateCursor();
+
+    // Cursor Hover expansion on interactive elements
+    const hoverElements = document.querySelectorAll('a, button, .magnetic-btn, .phone-mockup-frame, .laptop-mockup-frame, .poster-card-frame, .dock-item, .tool-card, .filter-btn');
+    hoverElements.forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        if (cursorRing) cursorRing.classList.add('cursor-hover');
+      });
+      el.addEventListener('mouseleave', () => {
+        if (cursorRing) cursorRing.classList.remove('cursor-hover');
+      });
     });
-  });
+  }
 
   // Magnetic Pull Effect on Magnetic Elements
   const magneticButtons = document.querySelectorAll('.magnetic-btn');
