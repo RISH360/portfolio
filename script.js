@@ -518,11 +518,11 @@ document.addEventListener('DOMContentLoaded', () => {
       tools: ["Adobe Illustrator", "Adobe Photoshop", "Ad Creative", "Layout"]
     },
     'project-10': {
-      title: "KickOff Web — Sports League & Tactical Pitch App",
+      title: "MotoVault - Your Vehicle Data Wallet",
       category: "UI/UX Mobile App Design",
-      year: "2026",
+      year: "2024",
       image: "assets/images/workbanner05.png",
-      overview: "Comprehensive digital product designed for modern football leagues, managers, and sports analysts. Features real-time match statistics, player telemetry cards, live tactical formation boards (4-3-3, 4-2-3-1), and custom pitch visualization in high contrast dark mode.",
+      overview: "MotoVault is an all-in-one digital garage application designed to store vehicle documents, track service histories, and deliver automated maintenance reminders right to your pocket.",
       deliverables: [
         "Complete High-Fidelity Figma Mobile App System (120+ Components)",
         "Dark Mode Contrast Architecture & Accessibility Standards",
