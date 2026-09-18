@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="oceanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7"/>
+      <stop offset="40%" stop-color="#06B6D4"/>
+      <stop offset="75%" stop-color="#0F766E"/>
+      <stop offset="100%" stop-color="#042F2E"/>
+    </linearGradient>
+
+    <linearGradient id="sunSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="50%" stop-color="#FDE047"/>
+      <stop offset="100%" stop-color="#F97316"/>
+    </linearGradient>
+
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="60%" stop-color="#BAE6FD"/>
+      <stop offset="100%" stop-color="#F0F9FF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky Base -->
+  <rect width="600" height="420" fill="url(#skyGrad)"/>
+
+  <!-- Sun -->
+  <circle cx="460" cy="180" r="75" fill="url(#sunSky)" opacity="0.9"/>
+
+  <!-- Distant Island Atoll Silhouette -->
+  <path d="M 0,380 Q 150,350 300,365 T 600,370 L 600,420 L 0,420 Z" fill="#047857" opacity="0.6"/>
+
+  <!-- Ocean Lagoon Base -->
+  <rect y="400" width="600" height="400" fill="url(#oceanGrad)"/>
+
+  <!-- Coral Reef Turquoise Shallows Waves -->
+  <path d="M 0,400 Q 120,385 250,405 T 500,395 T 600,410 L 600,800 L 0,800 Z" fill="#06B6D4" opacity="0.4"/>
+  <path d="M 0,440 Q 160,420 320,445 T 600,430 L 600,800 L 0,800 Z" fill="#0E7490" opacity="0.5"/>
+  <path d="M 0,510 Q 180,480 360,520 T 600,490 L 600,800 L 0,800 Z" fill="#0369A1" opacity="0.7"/>
+
+  <!-- Tropical Palm Tree Silhouette Foreground Left -->
+  <g transform="translate(40, 200)" fill="#064E3B">
+    <!-- Trunk -->
+    <path d="M 20,450 Q 70,250 140,120 Q 125,250 80,450 Z"/>
+    <!-- Fronds -->
+    <path d="M 140,120 Q 220,50 300,90 Q 220,110 140,120 Z"/>
+    <path d="M 140,120 Q 240,120 310,180 Q 220,165 140,120 Z"/>
+    <path d="M 140,120 Q 180,180 230,260 Q 170,210 140,120 Z"/>
+    <path d="M 140,120 Q 100,50 40,70 Q 95,95 140,120 Z"/>
+    <path d="M 140,120 Q 50,110 -20,160 Q 55,145 140,120 Z"/>
+  </g>
+
+  <!-- Flying Seaplane / Birds -->
+  <g transform="translate(240, 150)" fill="#0369A1">
+    <polygon points="0,0 25,-4 18,3"/>
+    <polygon points="40,20 60,16 54,23"/>
+    <polygon points="70,-15 88,-18 82,-12"/>
+  </g>
+
+  <!-- Top Metadata -->
+  <text x="50" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="12" fill="#0369A1" letter-spacing="4">TRIPSOGO EXPEDITIONS</text>
+  <text x="550" y="55" font-family="'Space Grotesk', monospace" font-weight="700" font-size="12" fill="#0369A1" text-anchor="end">LAKSHADWEEP, INDIA</text>
+
+  <!-- Title & Branding -->
+  <g transform="translate(50, 95)">
+    <rect width="130" height="28" rx="6" fill="#0284C7"/>
+    <text x="65" y="19" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="12" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">TOURISM</text>
+  </g>
+
+  <text x="50" y="175" font-family="'Outfit', sans-serif" font-weight="900" font-size="54" fill="#0F172A" letter-spacing="-1">DISCOVER</text>
+  <text x="50" y="235" font-family="'Outfit', sans-serif" font-weight="900" font-size="64" fill="#0284C7" letter-spacing="0">AGATTI ISLAND</text>
+
+  <!-- Bottom Details -->
+  <g transform="translate(50, 680)">
+    <text x="0" y="0" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="24" fill="#FFFFFF">TURQUOISE LAGOON ESCAPE</text>
+    <text x="0" y="26" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="14" fill="#67E8F9">SNORKELING • SCUBA DIVING • CORAL REEF EXPEDITIONS</text>
+  </g>
+
+  <!-- Attribution Badge -->
+  <g transform="translate(50, 745)">
+    <rect width="160" height="24" rx="5" fill="rgba(2, 132, 199, 0.4)" stroke="#38BDF8" stroke-width="1"/>
+    <text x="80" y="16" font-family="'Space Grotesk', monospace" font-weight="700" font-size="10" fill="#FFFFFF" text-anchor="middle">PHOTOSHOP & TRAVEL ART</text>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <linearGradient id="webGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E44D26"/>
+      <stop offset="50%" stop-color="#264DE4"/>
+      <stop offset="100%" stop-color="#F7DF1E"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="10" fill="#0E172A"/>
+  <rect x="2" y="2" width="44" height="44" rx="8" fill="none" stroke="url(#webGrad)" stroke-width="2"/>
+  <!-- Code brackets </> -->
+  <path d="M17 17L10 24L17 31" fill="none" stroke="#E44D26" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M31 17L38 24L31 31" fill="none" stroke="#264DE4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="26" y1="14" x2="22" y2="34" stroke="#F7DF1E" stroke-width="3" stroke-linecap="round"/>
+</svg>

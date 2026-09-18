@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="travelBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F766E"/>
+      <stop offset="50%" stop-color="#0E7490"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+    <linearGradient id="sunGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047"/>
+      <stop offset="100%" stop-color="#F97316"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#travelBg)"/>
+  
+  <!-- Travel Poster Frame 1 -->
+  <g transform="translate(120, 60) rotate(-4)">
+    <rect width="250" height="360" rx="14" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="6"/>
+    <rect x="15" y="15" width="220" height="230" rx="8" fill="#0284C7"/>
+    <circle cx="180" cy="65" r="35" fill="url(#sunGrad)"/>
+    <!-- Waves / Mountains -->
+    <path d="M 15 200 Q 70 140 130 180 T 235 170 L 235 245 L 15 245 Z" fill="#0C4A6E"/>
+    <path d="M 15 220 Q 90 180 160 210 T 235 200 L 235 245 L 15 245 Z" fill="#0284C7" opacity="0.8"/>
+    <text x="125" y="280" font-family="Arial, sans-serif" font-weight="900" font-size="20" fill="#0F172A" text-anchor="middle">DISCOVER AGATTI</text>
+    <text x="125" y="302" font-family="Arial, sans-serif" font-weight="bold" font-size="11" fill="#0284C7" text-anchor="middle">DOLPHIN WATCH & CRUISE</text>
+    <text x="125" y="325" font-family="Arial, sans-serif" font-size="10" fill="#64748B" text-anchor="middle">SUMMER CAMPAIGN 2026</text>
+  </g>
+
+  <!-- Travel Social Banner Frame 2 -->
+  <g transform="translate(430, 90) rotate(5)">
+    <rect width="280" height="320" rx="16" fill="#0B132B" stroke="#38BDF8" stroke-width="2"/>
+    <rect x="20" y="20" width="240" height="150" rx="10" fill="#1C2541"/>
+    <circle cx="140" cy="95" r="45" fill="#3A506B"/>
+    <text x="140" y="90" font-family="Arial, sans-serif" font-weight="900" font-size="24" fill="#6FFFE9" text-anchor="middle">TRIPSOGO</text>
+    <text x="140" y="115" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF" text-anchor="middle">ADVENTURE TOURISM</text>
+    
+    <text x="35" y="210" font-family="Arial, sans-serif" font-weight="bold" font-size="14" fill="#FFFFFF">Digital Ad Creative 4:5</text>
+    <text x="35" y="235" font-family="Arial, sans-serif" font-size="12" fill="#94A3B8">High Conversion Instagram Banner</text>
+    <rect x="35" y="260" width="120" height="32" rx="16" fill="#6FFFE9"/>
+    <text x="95" y="280" font-family="Arial, sans-serif" font-weight="bold" font-size="12" fill="#0B132B" text-anchor="middle">BOOK TOUR</text>
+  </g>
+  
+  <text x="40" y="470" font-family="Arial, sans-serif" font-weight="900" font-size="22" fill="#FFFFFF" letter-spacing="1">TRIPSOGO • ADVENTURE POSTERS & AD CREATIVES</text>
+</svg>

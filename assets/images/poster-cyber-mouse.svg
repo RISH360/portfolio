@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="cyberMouseBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070B14"/>
+      <stop offset="50%" stop-color="#0B132B"/>
+      <stop offset="100%" stop-color="#03060C"/>
+    </linearGradient>
+
+    <!-- Neon Cyan & Violet Gradients -->
+    <linearGradient id="neonCyanGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00F5D4"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+
+    <linearGradient id="neonVioletGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#6366F1"/>
+    </linearGradient>
+
+    <linearGradient id="mouseBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E2638"/>
+      <stop offset="50%" stop-color="#0F1420"/>
+      <stop offset="100%" stop-color="#080C14"/>
+    </linearGradient>
+
+    <!-- Glow Filters -->
+    <filter id="cyanGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="intenseLaser" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="20" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="600" height="800" fill="url(#cyberMouseBg)"/>
+
+  <!-- Cybernetic Grid Backdrop -->
+  <g stroke="#06B6D4" stroke-width="0.75" opacity="0.15">
+    <line x1="50" y1="0" x2="50" y2="800"/>
+    <line x1="550" y1="0" x2="550" y2="800"/>
+    <line x1="0" y1="80" x2="600" y2="80"/>
+    <line x1="0" y1="720" x2="600" y2="720"/>
+    <!-- Isometric Grid Planes -->
+    <line x1="0" y1="350" x2="600" y2="650"/>
+    <line x1="600" y1="350" x2="0" y2="650"/>
+    <line x1="150" y1="300" x2="450" y2="750"/>
+    <line x1="450" y1="300" x2="150" y2="750"/>
+  </g>
+
+  <!-- Ambient Glowing Aura -->
+  <circle cx="300" cy="400" r="220" fill="#06B6D4" opacity="0.12" filter="url(#intenseLaser)"/>
+  <circle cx="300" cy="420" r="160" fill="#A855F7" opacity="0.15" filter="url(#intenseLaser)"/>
+
+  <!-- Top Metadata -->
+  <text x="50" y="55" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="12" fill="#06B6D4" letter-spacing="4">HARDWARE DIVISION 2024</text>
+  <text x="550" y="55" font-family="'Space Grotesk', monospace" font-weight="700" font-size="12" fill="#94A3B8" text-anchor="end">ULTRA LIGHTWEIGHT 58G</text>
+
+  <!-- Floating Badge -->
+  <g transform="translate(50, 95)">
+    <rect width="130" height="28" rx="6" fill="rgba(6, 182, 212, 0.15)" stroke="#06B6D4" stroke-width="1.5"/>
+    <text x="65" y="19" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="12" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">CYBER TECH</text>
+  </g>
+
+  <!-- Main Product Title -->
+  <text x="50" y="180" font-family="'Outfit', sans-serif" font-weight="900" font-size="52" fill="#FFFFFF" letter-spacing="-1">NEON PRECISION</text>
+  <text x="50" y="235" font-family="'Outfit', sans-serif" font-weight="900" font-size="64" fill="url(#neonCyanGlow)" letter-spacing="0" filter="url(#cyanGlow)">MOUSE PRO</text>
+
+  <!-- Cyber Tech Mouse Vector Illustration -->
+  <g transform="translate(300, 420)">
+    <!-- Light Trail / Shadow Base -->
+    <ellipse cx="0" cy="150" rx="140" ry="30" fill="#06B6D4" opacity="0.2" filter="url(#cyanGlow)"/>
+
+    <!-- Mouse Outer Silhouette with Neon Glow Edge -->
+    <path d="M 0,-150 C 65,-150 105,-80 105,20 C 105,100 80,145 0,145 C -80,145 -105,100 -105,20 C -105,-80 -65,-150 0,-150 Z" 
+          fill="url(#mouseBody)" stroke="#06B6D4" stroke-width="3" filter="url(#cyanGlow)"/>
+
+    <!-- Left Click Button -->
+    <path d="M -5,-145 C -45,-145 -85,-80 -90,-20 L -5,-20 Z" fill="#151C2C" stroke="#A855F7" stroke-width="1.5"/>
+
+    <!-- Right Click Button -->
+    <path d="M 5,-145 C 45,-145 85,-80 90,-20 L 5,-20 Z" fill="#151C2C" stroke="#A855F7" stroke-width="1.5"/>
+
+    <!-- Scroll Wheel Well & Glowing Scroll Wheel -->
+    <rect x="-14" y="-130" width="28" height="60" rx="14" fill="#090D16" stroke="#06B6D4" stroke-width="1"/>
+    <rect x="-8" y="-115" width="16" height="36" rx="8" fill="url(#neonCyanGlow)" filter="url(#cyanGlow)"/>
+    <line x1="-8" y1="-97" x2="8" y2="-97" stroke="#000" stroke-width="2"/>
+
+    <!-- DPI Button -->
+    <polygon points="0,-45 8,-35 -8,-35" fill="#A855F7" filter="url(#cyanGlow)"/>
+
+    <!-- Honeycomb RGB Ventilation Mesh on Palm Rest -->
+    <g fill="none" stroke="#06B6D4" stroke-width="1.2" opacity="0.8" transform="translate(0, 50)">
+      <!-- Hexagons -->
+      <polygon points="0,-16 12,-8 12,8 0,16 -12,8 -12,-8"/>
+      <polygon points="-24,-16 -12,-8 -12,8 -24,16 -36,8 -36,-8"/>
+      <polygon points="24,-16 36,-8 36,8 24,16 12,8 12,-8"/>
+      <polygon points="-12,12 0,20 0,36 -12,44 -24,36 -24,20"/>
+      <polygon points="12,12 24,20 24,36 12,44 0,36 0,20"/>
+      <circle cx="0" cy="15" r="25" fill="#A855F7" opacity="0.25" filter="url(#cyanGlow)"/>
+    </g>
+
+    <!-- Side Grip Ergonomic Texture Lines -->
+    <path d="M -95,20 Q -98,60 -85,100" fill="none" stroke="#A855F7" stroke-width="3" filter="url(#cyanGlow)"/>
+    <path d="M 95,20 Q 98,60 85,100" fill="none" stroke="#A855F7" stroke-width="3" filter="url(#cyanGlow)"/>
+  </g>
+
+  <!-- Technical Spec Pills at Bottom -->
+  <g transform="translate(50, 640)">
+    <g transform="translate(0, 0)">
+      <rect width="150" height="42" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(6, 182, 212, 0.3)" stroke-width="1"/>
+      <text x="75" y="26" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="14" fill="#00F5D4" text-anchor="middle">26,000 DPI</text>
+    </g>
+    <g transform="translate(170, 0)">
+      <rect width="150" height="42" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(168, 85, 247, 0.3)" stroke-width="1"/>
+      <text x="75" y="26" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="14" fill="#C084FC" text-anchor="middle">OPTICAL SWITCH</text>
+    </g>
+    <g transform="translate(340, 0)">
+      <rect width="160" height="42" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(6, 182, 212, 0.3)" stroke-width="1"/>
+      <text x="80" y="26" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="14" fill="#00F5D4" text-anchor="middle">8000Hz POLLING</text>
+    </g>
+  </g>
+
+  <!-- Adobe Illustrator Attribution Badge -->
+  <g transform="translate(50, 725)">
+    <rect width="150" height="24" rx="5" fill="rgba(245, 158, 11, 0.15)" stroke="#F59E0B" stroke-width="1"/>
+    <text x="75" y="16" font-family="'Space Grotesk', monospace" font-weight="700" font-size="10" fill="#F59E0B" text-anchor="middle">ADOBE ILLUSTRATOR</text>
+  </g>
+</svg>

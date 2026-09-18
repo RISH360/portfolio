@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Mohamed Rishan — Senior Graphic Designer, UI/UX Specialist & Motion Artist. Crafting futuristic visual identities, mobile & web interfaces, and kinetic video experiences.">
+  <meta name="keywords"
+    content="Graphic Designer, UI/UX Designer, Motion Graphics, Video Editing, Figma, Photoshop, Illustrator, Premiere Pro, After Effects, Futuristic Portfolio">
+  <title>MOHAMED RISHAN — Graphic Designer | UI/UX Designer | Motion Graphics</title>
+
+  <!-- Google Fonts: Outfit, Syne, Space Grotesk, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@500;700;900&family=Syne:wght@700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="futuristic-theme">
+
+  <!-- ==================== CUSTOM MOUSE POINTER MOTION EFFECT ==================== -->
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+  <canvas id="cursor-canvas" class="cursor-trail-canvas"></canvas>
+
+  <!-- Ambient Cyber Lighting & Tech Grid Overlay -->
+  <div class="cyber-grid-overlay"></div>
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+  <div class="ambient-glow glow-4"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-bar" id="scroll-progress"></div>
+
+  <!-- ==================== HEADER & NAVIGATION ==================== -->
+  <header class="site-header" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo magnetic-btn">
+        <span class="logo-symbol"><i class="fa-solid fa-cube"></i></span>
+        <span class="logo-text">RISHAN<span class="dot">.</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-outline btn-sm nav-cta magnetic-btn">
+          <span class="status-indicator"></span> Let's Talk
+        </a>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== HOME / HERO SECTION (MODEL DESIGN) ==================== -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+
+        <!-- Giant Bold Typography Header Matching Reference Image -->
+        <div class="hero-mega-header">
+          <div class="mega-title-wrap">
+            <h1 class="mega-title">
+              <span class="mega-line kinetic-text" data-speed="1.05">PORT</span>
+              <span class="mega-line kinetic-text" data-speed="1.15">FOLIO<span class="mega-dot">.</span></span>
+            </h1>
+          </div>
+
+          <!-- Horizontal 3D Glossy Software Icons Strip Matching Reference Image -->
+          <div class="software-3d-dock" id="hero-dock">
+            <!-- 1. Illustrator Ai -->
+            <div class="dock-item squircle-3d squircle-ai" title="Adobe Illustrator" data-tilt>
+              <div class="squircle-inner">
+                <span class="squircle-badge-text">Ai</span>
+                <div class="squircle-specular"></div>
+              </div>
+            </div>
+
+            <!-- 2. Photoshop Ps -->
+            <div class="dock-item squircle-3d squircle-ps" title="Adobe Photoshop" data-tilt>
+              <div class="squircle-inner">
+                <span class="squircle-badge-text">Ps</span>
+                <div class="squircle-specular"></div>
+              </div>
+            </div>
+
+            <!-- 3. InDesign Id -->
+            <div class="dock-item squircle-3d squircle-id" title="Adobe InDesign" data-tilt>
+              <div class="squircle-inner">
+                <span class="squircle-badge-text">Id</span>
+                <div class="squircle-specular"></div>
+              </div>
+            </div>
+
+            <!-- 4. After Effects Ae -->
+            <div class="dock-item squircle-3d squircle-ae" title="Adobe After Effects" data-tilt>
+              <div class="squircle-inner">
+                <span class="squircle-badge-text">Ae</span>
+                <div class="squircle-specular"></div>
+              </div>
+            </div>
+
+            <!-- 5. JavaScript JS -->
+            <div class="dock-item squircle-3d squircle-js" title="JavaScript Interactivity" data-tilt>
+              <div class="squircle-inner">
+                <span class="squircle-badge-text">JS</span>
+                <div class="squircle-specular"></div>
+              </div>
+            </div>
+
+            <!-- 6. Premiere Pro Pr -->
+            <div class="dock-item squircle-3d squircle-pr" title="Adobe Premiere Pro" data-tilt>
+              <div class="squircle-inner">
+                <span class="squircle-badge-text">Pr</span>
+                <div class="squircle-specular"></div>
+              </div>
+            </div>
+
+            <!-- 7. Figma -->
+            <div class="dock-item squircle-3d squircle-figma" title="Figma UI/UX Systems" data-tilt>
+              <div class="squircle-inner">
+                <div class="figma-3d-logo">
+                  <span class="f-part f-red"></span>
+                  <span class="f-part f-orange"></span>
+                  <span class="f-part f-purple"></span>
+                  <span class="f-part f-cyan"></span>
+                  <span class="f-part f-green"></span>
+                </div>
+                <div class="squircle-specular"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Designer Profile Card & Overview Layout Matching Reference Image -->
+        <div class="hero-profile-bar glass-panel" data-reveal="fade-up">
+          <div class="profile-left">
+            <div class="profile-photo-frame">
+              <img src="assets/images/profile.jpg" alt="Mohamed Rishan - Graphic Designer" class="profile-image"
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&auto=format&fit=crop&q=80';">
+              <div class="profile-status-ring"></div>
+            </div>
+            <div class="profile-meta">
+              <h3 class="profile-name">MOHAMED RISHAN</h3>
+              <span class="profile-designation">Graphic Designer | UI/UX Designer | Motion Graphics</span>
+              <div class="profile-availability">
+                <span class="online-indicator"></span> Available for Freelance & Full-time Roles
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-right">
+            <!-- Hello Greeting & Dynamic Typing Bio -->
+            <div class="profile-bio-box">
+              <h4 class="bio-greeting">Hello,</h4>
+              <p class="bio-text">
+                I am an energetic Graphic Designer, UI/UX Specialist & Motion Artist. I craft impactful
+                visual identities, interactive high-fidelity digital products, and cinematic kinetic video campaigns.
+                I merge clean typography with futuristic motion and user psychology to produce extraordinary results.
+              </p>
+            </div>
+
+            <!-- Software Status Legend with Colored Dots Matching Reference Image -->
+            <div class="software-legend-box">
+              <h5 class="legend-title">Software,</h5>
+              <div class="legend-grid">
+                <div class="legend-item"><span class="color-dot dot-blue"></span> Photoshop</div>
+                <div class="legend-item"><span class="color-dot dot-amber"></span> Illustrator</div>
+                <div class="legend-item"><span class="color-dot dot-purple"></span> Premiere Pro</div>
+                <div class="legend-item"><span class="color-dot dot-violet"></span> After Effects</div>
+                <div class="legend-item"><span class="color-dot dot-cyan"></span> Figma</div>
+                <div class="legend-item"><span class="color-dot dot-green"></span> Canva Pro</div>
+                <div class="legend-item"><span class="color-dot dot-pink"></span> InDesign</div>
+                <div class="legend-item"><span class="color-dot dot-emerald"></span> HTML / CSS / JS</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Actions: Explore Work + Download Resume + Round Click Buttons -->
+        <div class="hero-actions-container" data-reveal="fade-up">
+          <div class="primary-buttons-group">
+            <a href="#work" class="btn btn-primary magnetic-btn">
+              <span>Explore Work</span>
+              <i class="fa-solid fa-arrow-down-right-long"></i>
+            </a>
+
+            <button class="btn btn-glass resume-btn magnetic-btn" id="resume-download-btn">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              <span>Download Resume</span>
+            </button>
+          </div>
+
+          <!-- Social Round Click Buttons Near Download Resume -->
+          <div class="hero-social-strip">
+            <span class="social-strip-label">Direct Connect:</span>
+            <div class="round-buttons-group">
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/mohamed-rishan-3453951b1/" target="_blank" rel="noopener noreferrer"
+                class="round-click-btn round-linkedin magnetic-btn" title="LinkedIn Profile" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <span class="btn-ripple"></span>
+              </a>
+
+              <!-- GitHub -->
+              <a href="https://github.com/RISH360" target="_blank" rel="noopener noreferrer"
+                class="round-click-btn round-github magnetic-btn" title="GitHub Repository" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+                <span class="btn-ripple"></span>
+              </a>
+
+              <!-- Gmail -->
+              <a href="mailto:mohamedrishan360@gmail.com" class="round-click-btn round-gmail magnetic-btn"
+                title="Send Email (mohamedrishan360@gmail.com)" aria-label="Gmail">
+                <i class="fa-solid fa-envelope"></i>
+                <span class="btn-ripple"></span>
+              </a>
+
+              <!-- WhatsApp -->
+              <a href="https://wa.me/916374349121?text=Hi%20Rishan,%20I%20love%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20design%20project!"
+                target="_blank" rel="noopener noreferrer" class="round-click-btn round-whatsapp magnetic-btn"
+                title="Chat on WhatsApp (+91 6374349121)" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span class="btn-ripple"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ME SECTION ==================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-tag">WHO I AM</span>
+          <h2 class="section-title">
+            About <span class="gradient-text">Me</span>
+          </h2>
+          <!-- Dynamic typing effect in About Me as requested -->
+          <div class="typing-subtext-box">
+            <i class="fa-solid fa-terminal text-cyan"></i>
+            <span id="typed-about" class="typing-text"></span>
+            <span class="typed-cursor">_</span>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card story-card glass-panel" data-reveal="fade-right">
+            <div class="card-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+            <h3 class="card-title">Crafting Futuristic Visual Experiences</h3>
+            <p class="card-text">
+              I am a multi-disciplinary designer and visual technologist focused on elevating brands through
+              distinguished visual identities, refined UI/UX digital interfaces, and high-energy kinetic video motion.
+              With deep technical grounding in <strong class="text-light">Adobe Creative Suite and Figma</strong>,
+              every canvas I design is calculated for emotional connection and commercial impact.
+            </p>
+            <p class="card-text mt-3">
+              Whether building a full-scale mobile application system, engineering a broadcast-level video promo,
+              or designing high-converting social media marketing graphics, I ensure extreme fidelity from concept to
+              delivery.
+            </p>
+
+            <div class="about-stats-row">
+              <div class="stat-pill">
+                <span class="stat-num">8+</span>
+                <span class="stat-lbl">Months Professional</span>
+              </div>
+              <div class="stat-pill">
+                <span class="stat-num">50+</span>
+                <span class="stat-lbl">Completed Works</span>
+              </div>
+              <div class="stat-pill">
+                <span class="stat-num">100%</span>
+                <span class="stat-lbl">Client Dedication</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-pillars" data-reveal="fade-left">
+            <div class="pillar-card glass-panel" data-tilt>
+              <div class="pillar-icon icon-glow-cyan"><i class="fa-solid fa-bezier-curve"></i></div>
+              <div class="pillar-info">
+                <h4>UI/UX & Digital Product Design</h4>
+                <p>Wireframing, interactive prototyping, user flows, responsive web & mobile design, and scalable design
+                  systems in Figma.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card glass-panel" data-tilt>
+              <div class="pillar-icon icon-glow-amber"><i class="fa-solid fa-palette"></i></div>
+              <div class="pillar-info">
+                <h4>Visual Identity & Graphic Design</h4>
+                <p>Vector logo systems, branding guidelines, social media ad creatives, typography hierarchy, and
+                  large-format print layouts.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card glass-panel" data-tilt>
+              <div class="pillar-icon icon-glow-purple"><i class="fa-solid fa-film"></i></div>
+              <div class="pillar-info">
+                <h4>Motion Graphics & Video Editing</h4>
+                <p>Kinetic typography, sound-synced video transitions, promotional campaigns, and high-retention 9:16
+                  short-form video reels.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE SECTION ==================== -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-tag">CAREER PATHWAY</span>
+          <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+          <p class="section-description">My professional tenure driving creative direction, digital product design, and
+            commercial visual production.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Experience Item 1 -->
+          <div class="timeline-item glass-panel" data-reveal="fade-up">
+            <div class="timeline-header">
+              <div class="role-badge"><i class="fa-solid fa-briefcase"></i> Position</div>
+              <span class="timeline-period"><i class="fa-regular fa-calendar"></i> 2025 - PRESENT</span>
+            </div>
+            <div class="timeline-body">
+              <h3 class="role-title">Graphic Designer | UI/UX Designer | Motion Graphics</h3>
+              <h4 class="company-name"><i class="fa-solid fa-building"></i> Fineest Technologies Pvt. Ltd.</h4>
+
+              <!-- Work details typing terminal -->
+              <div class="typing-details-card">
+                <div class="terminal-dots"><span></span><span></span><span></span></div>
+                <div class="typing-exp-target" id="exp-typing-1">
+                  Spearheading comprehensive brand overhaul, enterprise UI/UX design, marketing collaterals,
+                  high-converting social ad campaigns, and commercial video teasers. Designing scalable Figma UI systems
+                  and producing 60fps kinetic motion graphics that amplify client engagement and brand authority.
+                </div>
+              </div>
+
+              <div class="software-used-group">
+                <span class="software-label"><i class="fa-solid fa-screwdriver-wrench"></i> Software Used:</span>
+                <div class="software-tags">
+                  <span class="software-tag"><i class="fa-brands fa-figma text-cyan"></i> Figma</span>
+                  <span class="software-tag"><i class="fa-solid fa-image text-blue"></i> Photoshop</span>
+                  <span class="software-tag"><i class="fa-solid fa-pen-nib text-amber"></i> Illustrator</span>
+                  <span class="software-tag"><i class="fa-solid fa-video text-purple"></i> Premiere Pro</span>
+                  <span class="software-tag"><i class="fa-solid fa-wand-magic-sparkles text-violet"></i> After
+                    Effects</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Item 2 -->
+          <div class="timeline-item glass-panel" data-reveal="fade-up">
+            <div class="timeline-header">
+              <div class="role-badge"><i class="fa-solid fa-briefcase"></i> Position</div>
+              <span class="timeline-period"><i class="fa-regular fa-calendar"></i> 2024 - 2025</span>
+            </div>
+            <div class="timeline-body">
+              <h3 class="role-title">UI/UX Designer | Graphic Designer</h3>
+              <h4 class="company-name"><i class="fa-solid fa-laptop-code"></i> Freelance & Client Projects</h4>
+
+              <div class="typing-details-card">
+                <div class="terminal-dots"><span></span><span></span><span></span></div>
+                <div class="typing-exp-target" id="exp-typing-2">
+                  Architected intuitive responsive web interfaces, interactive mobile booking prototypes, and vibrant
+                  social media brand campaigns for clients across tourism, sports technology, and e-commerce. Enhanced
+                  booking conversions by over 42% through structured wireframing and user psychology.
+                </div>
+              </div>
+
+              <div class="software-used-group">
+                <span class="software-label"><i class="fa-solid fa-screwdriver-wrench"></i> Software Used:</span>
+                <div class="software-tags">
+                  <span class="software-tag"><i class="fa-brands fa-figma text-cyan"></i> Figma</span>
+                  <span class="software-tag"><i class="fa-solid fa-image text-blue"></i> Photoshop</span>
+                  <span class="software-tag"><i class="fa-solid fa-pen-nib text-amber"></i> Illustrator</span>
+                  <span class="software-tag"><i class="fa-solid fa-brush text-green"></i> Canva Pro</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Item 3 -->
+          <div class="timeline-item glass-panel" data-reveal="fade-up">
+            <div class="timeline-header">
+              <div class="role-badge"><i class="fa-solid fa-briefcase"></i> Position</div>
+              <span class="timeline-period"><i class="fa-regular fa-calendar"></i> 2024</span>
+            </div>
+            <div class="timeline-body">
+              <h3 class="role-title">Machine Learning and Artificial Intelligence – Internship</h3>
+              <h4 class="company-name"><i class="fa-solid fa-microchip"></i> Acutro Technologies</h4>
+
+              <div class="typing-details-card">
+                <div class="terminal-dots"><span></span><span></span><span></span></div>
+                <div class="typing-exp-target" id="exp-typing-3">
+                  Researched and integrated intelligent workflow interfaces, AI visual pattern recognition prototypes,
+                  and data dashboards. Bridged the gap between algorithmic machine learning intelligence and intuitive
+                  human interface design.
+                </div>
+              </div>
+
+              <div class="software-used-group">
+                <span class="software-label"><i class="fa-solid fa-screwdriver-wrench"></i> Software Used:</span>
+                <div class="software-tags">
+                  <span class="software-tag"><i class="fa-brands fa-python text-amber"></i> Python</span>
+                  <span class="software-tag"><i class="fa-solid fa-brain text-orange"></i> TensorFlow</span>
+                  <span class="software-tag"><i class="fa-solid fa-fire text-red"></i> PyTorch</span>
+                  <span class="software-tag"><i class="fa-solid fa-chart-line text-cyan"></i> Scikit-Learn</span>
+                  <span class="software-tag"><i class="fa-solid fa-code text-violet"></i> Jupyter Notebook</span>
+                  <span class="software-tag"><i class="fa-solid fa-table text-blue"></i> Pandas & NumPy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== WORK / PORTFOLIO SECTION (MATCHING MODEL IMAGE) ==================== -->
+    <section class="section work-section" id="work">
+      <div class="container">
+
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-tag">SELECTED PORTFOLIO</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Creations</span></h2>
+          <p class="section-description">
+            Explore curated design showcases built strictly in accordance with our flagship visual model — featuring
+            mobile UI systems,
+            web experiences, and Adobe design masterworks alongside floating 3D icons.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="portfolio-filter-bar" data-reveal="fade-up">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="mobile">Mobile Design</button>
+          <button class="filter-btn" data-filter="web">Web Design</button>
+          <button class="filter-btn" data-filter="adobe">Adobe Design</button>
+          <button class="filter-btn" data-filter="adobe-video">Adobe Videos</button>
+        </div>
+
+        <!-- ==================== SHOWCASE 1: MOBILE DESIGN. (WITH 3D FIGMA SQUIRCLE) ==================== -->
+        <div class="showcase-block showcase-left-align" data-category="mobile" data-reveal="fade-up">
+          <div class="showcase-content">
+            <h2 class="showcase-category-title kinetic-title" data-speed="1.15">
+              MOBILE<br>DESIGN<span class="title-dot">.</span>
+            </h2>
+            <p class="showcase-desc">
+              High-fidelity mobile UI/UX engineering. Intuitive information architecture, vibrant dark mode styling, and
+              dynamic sports telemetry.
+            </p>
+
+            <!-- 3 Phone Mockups Row matching the reference image -->
+            <div class="phone-mockups-row">
+              <!-- Phone 1: KickOff Live Match Telemetry -->
+              <div class="phone-mockup-frame" data-tilt onclick="openProjectModal('project-10')">
+                <div class="phone-notch"></div>
+                <div class="phone-screen screen-1">
+                  <img src="assets/images/mobile-ui-cookies3.png" alt="KickOff Sports App - Live Match Telemetry"
+                    class="phone-screen-img" loading="lazy">
+                </div>
+                <div class="mockup-hover-hint"><i class="fa-solid fa-expand"></i> View</div>
+              </div>
+
+              <!-- Phone 2: KickOff Tactical Pitch Board -->
+              <div class="phone-mockup-frame" data-tilt onclick="openProjectModal('project-1')">
+                <div class="phone-notch"></div>
+                <div class="phone-screen screen-2">
+                  <img src="assets/images/mobile-ui-cookies2.png" alt="KickOff Sports App - Tactical Pitch Board"
+                    class="phone-screen-img" loading="lazy">
+                </div>
+                <div class="mockup-hover-hint"><i class="fa-solid fa-expand"></i> View</div>
+              </div>
+
+              <!-- Phone 3: Cookies Food Delivery & Bakery App -->
+              <div class="phone-mockup-frame" data-tilt onclick="openProjectModal('project-2')">
+                <div class="phone-notch"></div>
+                <div class="phone-screen screen-3">
+                  <img src="assets/images/mobile-ui-cookies.png" alt="Cookies Food Delivery - Bakery & Ordering App"
+                    class="phone-screen-img" loading="lazy">
+                </div>
+                <div class="mockup-hover-hint"><i class="fa-solid fa-expand"></i> View</div>
+              </div>
+            </div>
+
+            <div class="showcase-tags">
+              <span>Figma Prototyping</span>
+              <span>iOS Design Systems</span>
+              <span>Dark Theme UI</span>
+              <span>Micro-Interactions</span>
+            </div>
+          </div>
+
+          <!-- Giant Floating 3D Figma Icon on Right matching Reference Image -->
+          <div class="showcase-3d-side" data-parallax="0.25">
+            <div class="giant-3d-icon squircle-3d squircle-figma giant-figma-badge" data-tilt>
+              <div class="squircle-inner">
+                <div class="figma-3d-logo giant-logo">
+                  <span class="f-part f-red"></span>
+                  <span class="f-part f-orange"></span>
+                  <span class="f-part f-purple"></span>
+                  <span class="f-part f-cyan"></span>
+                  <span class="f-part f-green"></span>
+                </div>
+                <div class="squircle-specular"></div>
+              </div>
+              <div class="icon-shadow-3d"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================== SHOWCASE 2: WEB DESIGN. (WITH DUAL LAPTOP MOCKUPS) ==================== -->
+        <div class="showcase-block showcase-right-align" data-category="web" data-reveal="fade-up">
+          <!-- Giant 3D Icon or Graphic on Left matching Reference Image -->
+          <div class="showcase-3d-side" data-parallax="-0.2">
+            <div class="giant-3d-icon squircle-3d squircle-js giant-code-badge" data-tilt>
+              <div class="squircle-inner">
+                <span class="giant-badge-text">WEB</span>
+                <div class="squircle-specular"></div>
+              </div>
+              <div class="icon-shadow-3d"></div>
+            </div>
+          </div>
+
+          <div class="showcase-content">
+            <h2 class="showcase-category-title kinetic-title" data-speed="1.15">
+              WEB<br>DESIGN<span class="title-dot">.</span>
+            </h2>
+            <p class="showcase-desc">
+              Cutting-edge web portals, sports analytics dashboards, and immersive interactive digital experiences built
+              with aesthetic elegance.
+            </p>
+
+            <!-- Dual Laptop / Desktop Mockups Row matching the reference image -->
+            <div class="laptop-mockups-row">
+              <!-- Laptop Mockup 1: Soccer Sports Portal -->
+              <div class="laptop-mockup-frame" data-tilt onclick="openProjectModal('project-7')">
+                <div class="laptop-screen">
+                  <div class="laptop-top-bar">
+                    <span class="l-dot red"></span>
+                    <span class="l-dot yellow"></span>
+                    <span class="l-dot green"></span>
+                    <span class="l-url">kickoff-arena.pro</span>
+                  </div>
+                  <div class="laptop-screen-content">
+                    <img src="assets/images/web-ui-kickoff.jpg"
+                      alt="KickOff Web Sports Web Portal - Live Fixtures & Analytics" class="laptop-screen-img"
+                      loading="lazy">
+                  </div>
+                </div>
+                <div class="laptop-base"></div>
+                <div class="mockup-hover-hint"><i class="fa-solid fa-expand"></i> View Details</div>
+              </div>
+
+              <!-- Laptop Mockup 2: Arsenal Home Webpage -->
+              <div class="laptop-mockup-frame" data-tilt onclick="openProjectModal('project-3')">
+                <div class="laptop-screen">
+                  <div class="laptop-top-bar">
+                    <span class="l-dot red"></span>
+                    <span class="l-dot yellow"></span>
+                    <span class="l-dot green"></span>
+                    <span class="l-url">arsenal-fc-official.com</span>
+                  </div>
+                  <div class="laptop-screen-content">
+                    <img src="assets/images/web-ui-arsenal.png" alt="Arsenal FC Official Matchday Hub Web Experience"
+                      class="laptop-screen-img" loading="lazy">
+                  </div>
+                </div>
+                <div class="laptop-base"></div>
+                <div class="mockup-hover-hint"><i class="fa-solid fa-expand"></i> View Details</div>
+              </div>
+            </div>
+
+            <div class="showcase-tags">
+              <span>Web Interface</span>
+              <span>Responsive Grid</span>
+              <span>Visual Hierarchy</span>
+              <span>Interaction Flow</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================== SHOWCASE 3: Adobe DESIGN. (WITH GIANT 3D PHOTOSHOP SQUIRCLE) ==================== -->
+        <div class="showcase-block showcase-left-align" data-category="adobe" data-reveal="fade-up">
+          <div class="showcase-content">
+            <h2 class="showcase-category-title kinetic-title" data-speed="1.15">
+              Adobe<br>DESIGN<span class="title-dot">.</span>
+            </h2>
+            <p class="showcase-desc">
+              High-impact promotional poster compositions, vector typography, and cyber club event artworks created in
+              Photoshop.
+            </p>
+
+            <!-- Poster Cards Row matching Reference Image (e.g. Poster 2 and Party) -->
+            <div class="poster-cards-row">
+              <div class="poster-card-frame poster-blue-2" data-tilt onclick="openProjectModal('project-4')">
+                <img src="assets/images/poster-cyber-wave.jpg" alt="Cyber Retro Wave Event 02 Poster"
+                  class="poster-card-img" loading="lazy">
+                <div class="mockup-hover-hint"><i class="fa-solid fa-expand"></i> View</div>
+              </div>
+
+              <div class="poster-card-frame poster-dark-party" data-tilt onclick="openProjectModal('project-8')">
+                <img src="assets/images/poster-night-party.jpg" alt="Night Club Party Weekend Live DJ Poster"
+                  class="poster-card-img" loading="lazy">
+                <div class="mockup-hover-hint"><i class="fa-solid fa-expand"></i> View</div>
+              </div>
+            </div>
+
+            <div class="showcase-tags">
+              <span>Poster Art</span>
+              <span>Color Grading</span>
+              <span>Photo Manipulation</span>
+              <span>Photoshop Master</span>
+            </div>
+          </div>
+
+          <!-- Giant Floating 3D Photoshop "Ps" Squircle on Right matching Reference Image -->
+          <div class="showcase-3d-side" data-parallax="0.25">
+            <div class="giant-3d-icon squircle-3d squircle-ps giant-ps-badge" data-tilt>
+              <div class="squircle-inner">
+                <span class="giant-badge-text">Ps</span>
+                <div class="squircle-specular"></div>
+              </div>
+              <div class="icon-shadow-3d"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================== SHOWCASE 4: Adobe DESIGN. (WITH GIANT 3D ILLUSTRATOR SQUIRCLE) ==================== -->
+        <div class="showcase-block showcase-right-align" data-category="adobe" data-reveal="fade-up">
+          <!-- Giant Floating 3D Illustrator "Ai" Squircle on Left matching Reference Image -->
+          <div class="showcase-3d-side" data-parallax="-0.22">
+            <div class="giant-3d-icon squircle-3d squircle-ai giant-ai-badge" data-tilt>
+              <div class="squircle-inner">
+                <span class="giant-badge-text">Ai</span>
+                <div class="squircle-specular"></div>
+              </div>
+              <div class="icon-shadow-3d"></div>
+            </div>
+          </div>
+
+          <div class="showcase-content">
+            <h2 class="showcase-category-title kinetic-title" data-speed="1.15">
+              Adobe<br>DESIGN<span class="title-dot">.</span>
+            </h2>
+            <p class="showcase-desc">
+              Festive Christmas promotional visual campaigns and 3D glowing cyber hardware product creatives.
+            </p>
+
+            <!-- Poster Cards Row matching Reference Image (Christmas Tree & Glowing Mouse) -->
+            <div class="poster-cards-row">
+              <div class="poster-card-frame poster-red-xmas" data-tilt onclick="openProjectModal('project-5')">
+                <img src="assets/images/poster-xmas-festive.jpg" alt="Merry Xmas Festive Holiday Sale Poster"
+                  class="poster-card-img" loading="lazy">
+                <div class="mockup-hover-hint"><i class="fa-solid fa-expand"></i> View</div>
+              </div>
+
+              <div class="poster-card-frame poster-tech-mouse" data-tilt onclick="openProjectModal('project-9')">
+                <img src="assets/images/poster-cyber-mouse.jpg" alt="Cyber Tech Precision Gaming Mouse Poster"
+                  class="poster-card-img" loading="lazy">
+                <div class="mockup-hover-hint"><i class="fa-solid fa-expand"></i> View</div>
+              </div>
+            </div>
+
+            <div class="showcase-tags">
+              <span>Vector Illustration</span>
+              <span>Banner & Ad Creative</span>
+              <span>Brand Campaign</span>
+              <span>Adobe Illustrator</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================== SHOWCASE 5: Adobe VIDEOS. (WITH GIANT 3D PREMIERE PRO SQUIRCLE) ==================== -->
+        <div class="showcase-block showcase-left-align" data-category="adobe-video" data-reveal="fade-up">
+          <div class="showcase-content">
+            <h2 class="showcase-category-title kinetic-title" data-speed="1.15">
+              Adobe<br>VIDEOS<span class="title-dot">.</span>
+            </h2>
+            <p class="showcase-desc">
+              Cinematic commercial advertisements, rhythm-cut travel reels, and dynamic visual storytelling created in
+              Premiere Pro & After Effects.
+            </p>
+
+            <!-- 2 Video Project Cards Row -->
+            <div class="poster-cards-row video-cards-row">
+              <!-- Video Project 1: Finergy Future Power Commercial -->
+              <div class="poster-card-frame video-project-card" data-tilt onclick="openProjectModal('project-video-1')"
+                oncontextmenu="return false;" ondragstart="return false;">
+                <img src="assets/images/video-finergy-cover.png" alt="Finergy Future Power Commercial Motion Ad"
+                  class="poster-card-img" loading="lazy" draggable="false" oncontextmenu="return false;">
+                <div class="video-card-play-overlay">
+                  <div class="video-play-pulse-btn"><i class="fa-solid fa-play"></i></div>
+                  <div class="video-card-tags">
+                    <span class="video-duration-tag">0:15 Commercial</span>
+                    <span class="video-security-pill"><i class="fa-solid fa-shield-halved"></i> View Only</span>
+                  </div>
+                </div>
+                <div class="mockup-hover-hint"><i class="fa-solid fa-play"></i> View Details & Play</div>
+              </div>
+
+              <!-- Video Project 2: TripSogo Kerala Cinematic Travel Reel -->
+              <div class="poster-card-frame video-project-card" data-tilt onclick="openProjectModal('project-video-2')"
+                oncontextmenu="return false;" ondragstart="return false;">
+                <img src="assets/images/video-finergy-cover.png" alt="TripSogo Kerala Cinematic Travel Reel"
+                  class="poster-card-img" loading="lazy" draggable="false" oncontextmenu="return false;">
+                <div class="video-card-play-overlay">
+                  <div class="video-play-pulse-btn"><i class="fa-solid fa-play"></i></div>
+                  <div class="video-card-tags">
+                    <span class="video-duration-tag">0:16 Reel</span>
+                    <span class="video-security-pill"><i class="fa-solid fa-shield-halved"></i> View Only</span>
+                  </div>
+                </div>
+                <div class="mockup-hover-hint"><i class="fa-solid fa-play"></i> View Details & Play</div>
+              </div>
+            </div>
+
+            <div class="showcase-tags">
+              <span>Commercial Motion</span>
+              <span>Cinematic Reels</span>
+              <span>Color Grading</span>
+              <span>Sound Design</span>
+              <span>Adobe Premiere Pro</span>
+              <span>After Effects</span>
+            </div>
+          </div>
+
+          <!-- Giant Floating 3D Premiere Pro "Pr" Squircle on Right -->
+          <div class="showcase-3d-side" data-parallax="0.25">
+            <div class="giant-3d-icon squircle-3d squircle-pr giant-pr-badge" data-tilt>
+              <div class="squircle-inner">
+                <span class="giant-badge-text">Pr</span>
+                <div class="squircle-specular"></div>
+              </div>
+              <div class="icon-shadow-3d"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================== SHOWCASE 6: EXTRA WORKS TOGGLED BY VIEW MORE ==================== -->
+        <div class="extra-showcases-container" id="extra-showcases" style="display: none;">
+
+          <!-- Extra Showcase 1: Eid / Aviation & City Posters -->
+          <div class="showcase-block showcase-left-align" data-category="adobe">
+            <div class="showcase-content">
+              <h2 class="showcase-category-title kinetic-title">
+                Adobe<br>DESIGN<span class="title-dot">.</span>
+              </h2>
+              <p class="showcase-desc">
+                Island tourism posters for TripSogo and high-impact travel flyers engineered for wanderlust.
+              </p>
+              <div class="poster-cards-row">
+                <div class="poster-card-frame poster-night-city" data-tilt onclick="openProjectModal('project-4')">
+                  <img src="assets/images/adventure tourism post 01.jpg" alt="Agatti Island Tourism Poster"
+                    class="poster-card-img" loading="lazy">
+                  <div class="mockup-hover-hint"><i class="fa-solid fa-expand"></i> View</div>
+                </div>
+
+                <div class="poster-card-frame poster-eid" data-tilt onclick="openProjectModal('project-4')">
+                  <img src="assets/images/tripsogo (2).jpg" alt="Eid Mubarak Cultural Festival Poster"
+                    class="poster-card-img" loading="lazy">
+                  <div class="mockup-hover-hint"><i class="fa-solid fa-expand"></i> View</div>
+                </div>
+              </div>
+              <div class="showcase-tags">
+                <span>Social Ad Creatives</span>
+                <span>Poster Design</span>
+                <span>Photo Editing</span>
+              </div>
+            </div>
+
+            <div class="showcase-3d-side">
+              <div class="giant-3d-icon squircle-3d squircle-ae giant-ae-badge" data-tilt>
+                <div class="squircle-inner">
+                  <span class="giant-badge-text">Ae</span>
+                  <div class="squircle-specular"></div>
+                </div>
+                <div class="icon-shadow-3d"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Extra Showcase 2: Solar Billboard & Motion Reels -->
+          <div class="showcase-block showcase-right-align" data-category="adobe">
+            <div class="showcase-3d-side">
+              <div class="giant-3d-icon squircle-3d squircle-pr giant-pr-badge" data-tilt>
+                <div class="squircle-inner">
+                  <span class="giant-badge-text">Pr</span>
+                  <div class="squircle-specular"></div>
+                </div>
+                <div class="icon-shadow-3d"></div>
+              </div>
+            </div>
+
+            <div class="showcase-content">
+              <h2 class="showcase-category-title kinetic-title">
+                Adobe<br>DESIGN<span class="title-dot">.</span>
+              </h2>
+              <p class="showcase-desc">
+                Short-form vertical video campaign and commercial kinetic logo reveal for Vedayur wellness.
+              </p>
+              <div class="poster-cards-row">
+                <div class="poster-card-frame poster-green-nature" data-tilt onclick="openProjectModal('project-6')">
+                  <div class="poster-badge">MOTION REEL</div>
+                  <div class="poster-nature-art"><i class="fa-solid fa-play"></i></div>
+                  <div class="poster-footer-text">VEDAYUR VIRAL REELS</div>
+                  <div class="mockup-hover-hint"><i class="fa-solid fa-expand"></i> View</div>
+                </div>
+
+                <div class="poster-card-frame poster-solar" data-tilt onclick="openProjectModal('project-5')">
+                  <div class="poster-badge">BILLBOARD</div>
+                  <div class="poster-solar-art"><i class="fa-solid fa-solar-panel"></i></div>
+                  <div class="poster-footer-text">SUNFIX ENERGY OUTDOOR</div>
+                  <div class="mockup-hover-hint"><i class="fa-solid fa-expand"></i> View</div>
+                </div>
+              </div>
+              <div class="showcase-tags">
+                <span>Motion Graphics</span>
+                <span>Kinetic Typography</span>
+                <span>Video Editing</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- View More Work Button -->
+        <div class="view-more-box" data-reveal="fade-up">
+          <button class="btn btn-outline magnetic-btn" id="view-more-btn">
+            <span id="view-more-text">View More Work</span>
+            <i class="fa-solid fa-angles-down" id="view-more-icon"></i>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS & TOOLS SECTION (ALL 27 SKILLS INCLUDED) ==================== -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-tag">CORE COMPETENCIES</span>
+          <h2 class="section-title">Design <span class="gradient-text">Skills</span> & Tools</h2>
+          <p class="section-description">
+            A comprehensive spectrum of creative capabilities spanning interactive UI/UX products,
+            high-impact visual identity, and cinematic kinetic motion.
+          </p>
+        </div>
+
+        <!-- 3 Categorized Interactive Cards Containing ALL 27 Specified Skills -->
+        <div class="skills-categories-grid">
+
+          <!-- Category 1: UI/UX & Product Design -->
+          <div class="skill-category-card glass-panel" data-tilt data-reveal="fade-right">
+            <div class="category-header">
+              <div class="category-icon icon-glow-cyan"><i class="fa-solid fa-layer-group"></i></div>
+              <div>
+                <h3 class="category-title">UI/UX & Product Design</h3>
+                <span class="category-count">7 Specialized Disciplines</span>
+              </div>
+            </div>
+            <div class="skill-tags-cloud">
+              <span class="skill-tag"><i class="fa-solid fa-circle-dot"></i> User Interface (UI) Design</span>
+              <span class="skill-tag"><i class="fa-solid fa-circle-dot"></i> User Experience (UX) Design</span>
+              <span class="skill-tag"><i class="fa-solid fa-circle-dot"></i> Wireframing & Prototyping</span>
+              <span class="skill-tag"><i class="fa-solid fa-circle-dot"></i> User Flow Design</span>
+              <span class="skill-tag"><i class="fa-solid fa-circle-dot"></i> Responsive Web & Mobile Design</span>
+              <span class="skill-tag"><i class="fa-solid fa-circle-dot"></i> Design Systems</span>
+              <span class="skill-tag"><i class="fa-solid fa-circle-dot"></i> Interaction Design</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Visual & Brand Design -->
+          <div class="skill-category-card glass-panel" data-tilt data-reveal="fade-up">
+            <div class="category-header">
+              <div class="category-icon icon-glow-amber"><i class="fa-solid fa-paintbrush"></i></div>
+              <div>
+                <h3 class="category-title">Visual & Brand Design</h3>
+                <span class="category-count">11 Specialized Disciplines</span>
+              </div>
+            </div>
+            <div class="skill-tags-cloud">
+              <span class="skill-tag"><i class="fa-solid fa-circle-dot"></i> Visual Design</span>
+              <span class="skill-tag"><i class="fa-solid fa-circle-dot"></i> Typography</span>
+              <span class="skill-tag"><i class="fa-solid fa-circle-dot"></i> Color Theory</span>
+              <span class="skill-tag"><i class="fa-solid fa-circle-dot"></i> Branding & Visual Identity</span>
+              <span class="skill-tag"><i class="fa-solid fa-circle-dot"></i> Social Media Design</span>
+              <span class="skill-tag"><i class="fa-solid fa-circle-dot"></i> Poster Design</span>
+              <span class="skill-tag"><i class="fa-solid fa-circle-dot"></i> Banner & Ad Creative Design</span>
+              <span class="skill-tag"><i class="fa-solid fa-circle-dot"></i> Print Design</span>
+              <span class="skill-tag"><i class="fa-solid fa-circle-dot"></i> Layout Design</span>
+              <span class="skill-tag"><i class="fa-solid fa-circle-dot"></i> Photo Editing</span>
+              <span class="skill-tag"><i class="fa-solid fa-circle-dot"></i> Creative Content Design</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Motion & Video Design -->
+          <div class="skill-category-card glass-panel" data-tilt data-reveal="fade-left">
+            <div class="category-header">
+              <div class="category-icon icon-glow-purple"><i class="fa-solid fa-video"></i></div>
+              <div>
+                <h3 class="category-title">Motion Graphics & Video</h3>
+                <span class="category-count">9 Specialized Disciplines</span>
+              </div>
+            </div>
+            <div class="skill-tags-cloud">
+              <span class="skill-tag"><i class="fa-solid fa-circle-dot"></i> Motion Graphics Design</span>
+              <span class="skill-tag"><i class="fa-solid fa-circle-dot"></i> Video Editing</span>
+              <span class="skill-tag"><i class="fa-solid fa-circle-dot"></i> Animated Social Media Creatives</span>
+              <span class="skill-tag"><i class="fa-solid fa-circle-dot"></i> Logo Animation</span>
+              <span class="skill-tag"><i class="fa-solid fa-circle-dot"></i> Kinetic Typography</span>
+              <span class="skill-tag"><i class="fa-solid fa-circle-dot"></i> Transition & Visual Effects</span>
+              <span class="skill-tag"><i class="fa-solid fa-circle-dot"></i> Promotional Video Design</span>
+              <span class="skill-tag"><i class="fa-solid fa-circle-dot"></i> Short-form Video Editing</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Mastered Software Suite Grid with 3D Badges & Proficiency Meters -->
+        <div class="tools-showcase-wrap" data-reveal="fade-up">
+          <div class="tools-header">
+            <span class="tools-mini-title">PROFESSIONAL SOFTWARE MASTERY</span>
+            <h3 class="tools-main-title">Software Suite I Utilize Daily</h3>
+          </div>
+
+          <div class="tools-grid">
+            <!-- 1. Photoshop -->
+            <div class="tool-card glass-panel" data-tilt>
+              <div class="tool-squircle squircle-ps">
+                <img src="assets/icons/photoshop.svg" alt="Adobe Photoshop Icon" class="tool-software-icon">
+              </div>
+              <h4 class="tool-name">Photoshop</h4>
+              <span class="tool-role">Photo & Visual Art</span>
+              <div class="tool-level"><span style="width: 96%"></span></div>
+            </div>
+
+            <!-- 2. Illustrator -->
+            <div class="tool-card glass-panel" data-tilt>
+              <div class="tool-squircle squircle-ai">
+                <img src="assets/icons/illustrator.svg" alt="Adobe Illustrator Icon" class="tool-software-icon">
+              </div>
+              <h4 class="tool-name">Illustrator</h4>
+              <span class="tool-role">Vectors & Branding</span>
+              <div class="tool-level"><span style="width: 95%"></span></div>
+            </div>
+
+            <!-- 3. Premiere Pro -->
+            <div class="tool-card glass-panel" data-tilt>
+              <div class="tool-squircle squircle-pr">
+                <img src="assets/icons/premiere-pro.svg" alt="Adobe Premiere Pro Icon" class="tool-software-icon">
+              </div>
+              <h4 class="tool-name">Premiere Pro</h4>
+              <span class="tool-role">Video Timeline Editing</span>
+              <div class="tool-level"><span style="width: 92%"></span></div>
+            </div>
+
+            <!-- 4. After Effects -->
+            <div class="tool-card glass-panel" data-tilt>
+              <div class="tool-squircle squircle-ae">
+                <img src="assets/icons/after-effects.svg" alt="Adobe After Effects Icon" class="tool-software-icon">
+              </div>
+              <h4 class="tool-name">After Effects</h4>
+              <span class="tool-role">VFX & Kinetic Motion</span>
+              <div class="tool-level"><span style="width: 90%"></span></div>
+            </div>
+
+            <!-- 5. Figma -->
+            <div class="tool-card glass-panel" data-tilt>
+              <div class="tool-squircle squircle-figma">
+                <img src="assets/icons/figma.svg" alt="Figma Icon" class="tool-software-icon">
+              </div>
+              <h4 class="tool-name">Figma</h4>
+              <span class="tool-role">UI/UX Design Systems</span>
+              <div class="tool-level"><span style="width: 95%"></span></div>
+            </div>
+
+            <!-- 6. Canva Pro -->
+            <div class="tool-card glass-panel" data-tilt>
+              <div class="tool-squircle squircle-canva">
+                <img src="assets/icons/canva.svg" alt="Canva Pro Icon" class="tool-software-icon">
+              </div>
+              <h4 class="tool-name">Canva Pro</h4>
+              <span class="tool-role">Rapid Social Media Kits</span>
+              <div class="tool-level"><span style="width: 92%"></span></div>
+            </div>
+
+            <!-- 7. Lightroom -->
+            <div class="tool-card glass-panel" data-tilt>
+              <div class="tool-squircle squircle-lr">
+                <img src="assets/icons/lightroom.svg" alt="Adobe Lightroom Icon" class="tool-software-icon">
+              </div>
+              <h4 class="tool-name">Lightroom</h4>
+              <span class="tool-role">Color Grading & Tone</span>
+              <div class="tool-level"><span style="width: 88%"></span></div>
+            </div>
+
+            <!-- 8. Web Technologies (HTML/CSS/JS) -->
+            <div class="tool-card glass-panel" data-tilt>
+              <div class="tool-squircle squircle-js">
+                <img src="assets/icons/web-tech.svg" alt="HTML / CSS / JS Web Technologies Icon"
+                  class="tool-software-icon">
+              </div>
+              <h4 class="tool-name">HTML / CSS / JS</h4>
+              <span class="tool-role">Interactive Web UI</span>
+              <div class="tool-level"><span style="width: 85%"></span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ==================== EDUCATION DETAILS (BELOW SKILLS) ==================== -->
+        <div class="education-section-wrap" id="education" data-reveal="fade-up">
+          <div class="education-header">
+            <span class="tools-mini-title">ACADEMIC FOUNDATION</span>
+            <h3 class="tools-main-title">Education & Certifications</h3>
+          </div>
+
+          <div class="education-grid">
+            <div class="edu-card glass-panel" data-tilt>
+              <div class="edu-year-badge"><i class="fa-solid fa-graduation-cap"></i> 2020 - 2024</div>
+              <h4 class="edu-degree">Bachelor of Engineering (B.E.) in Computer Science & Engineering</h4>
+              <h5 class="edu-institute"><i class="fa-solid fa-university"></i> Anna University</h5>
+              <p class="edu-details">
+                Rigorous grounding in computing logic, visual software engineering, digital typography, web systems, and
+                interaction methodologies. Graduated with First Class Honors.
+              </p>
+            </div>
+
+            <div class="edu-card glass-panel" data-tilt>
+              <div class="edu-year-badge"><i class="fa-solid fa-certificate"></i> 2024</div>
+              <h4 class="edu-degree">Certification in Machine Learning And Artificial Intelligence</h4>
+              <h5 class="edu-institute"><i class="fa-solid fa-clapperboard"></i> Acutro Technologies</h5>
+              <p class="edu-details">
+                Comprehensive study of core algorithms, predictive modeling, and intelligent data systems, bridging
+                computational theory with modern AI applications.
+            </div>
+
+            <div class="edu-card glass-panel" data-tilt>
+              <div class="edu-year-badge"><i class="fa-solid fa-award"></i> 2011</div>
+              <h4 class="edu-degree">Certification in Educational Assessment Australia</h4>
+              <h5 class="edu-institute"><i class="fa-solid fa-shapes"></i> Sydney, Australia</h5>
+              <p class="edu-details">
+                High-level performance in foundational educational assessment, demonstrating strong analytical and
+                cognitive skills.
+              </p>
+            </div>
+
+            <div class="edu-card glass-panel" data-tilt>
+              <div class="edu-year-badge"><i class="fa-solid fa-award"></i> 2010</div>
+              <h4 class="edu-degree">Certification in International Master Mathematics Olympiad</h4>
+              <h5 class="edu-institute"><i class="fa-solid fa-shapes"></i> New Delhi, India</h5>
+              <p class="edu-details">
+                Recognized for exceptional mathematical reasoning and problem-solving skills in a prestigious
+                international competition.
+            </div>
+
+            <div class="edu-card glass-panel" data-tilt>
+              <div class="edu-year-badge"><i class="fa-solid fa-award"></i> 2012</div>
+              <h4 class="edu-degree">Certification in IkenScientifica</h4>
+              <h5 class="edu-institute"><i class="fa-solid fa-shapes"></i> India</h5>
+              <p class="edu-details">
+                Certification for excellence in a national-level science and technology talent search and aptitude
+                assessment.
+              </p>
+            </div>
+
+            <div class="edu-card glass-panel" data-tilt>
+              <div class="edu-year-badge"><i class="fa-solid fa-award"></i> 2013</div>
+              <h4 class="edu-degree">Certification in Aloha</h4>
+              <h5 class="edu-institute"><i class="fa-solid fa-shapes"></i> India</h5>
+              <p class="edu-details">
+                Certification in Abacus and Mental Arithmetic, demonstrating advanced mental calculation and cognitive
+                abilities.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-tag">LET'S CONNECT</span>
+          <h2 class="section-title">Initiate <span class="gradient-text">Collaboration</span></h2>
+          <p class="section-description">
+            Have an exciting branding project, digital product to build, or need high-octane motion graphics?
+            Reach out directly and let's craft something unforgettable.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <!-- Left: Contact Details Panel -->
+          <div class="contact-info-panel glass-panel" data-reveal="fade-right">
+            <h3 class="contact-panel-title">Direct Inquiries</h3>
+            <p class="contact-panel-intro">
+              I am available for freelance commissions, long-term brand collaborations, and full-time creative design
+              positions.
+            </p>
+
+            <div class="contact-items-list">
+              <!-- Email / Gmail -->
+              <a href="mailto:mohamedrishan360@gmail.com" class="contact-method-card magnetic-btn">
+                <div class="method-icon icon-glow-cyan"><i class="fa-solid fa-envelope"></i></div>
+                <div class="method-details">
+                  <span class="method-title">Email Address</span>
+                  <strong class="method-value">mohamedrishan360@gmail.com</strong>
+                </div>
+              </a>
+
+              <!-- WhatsApp & Phone -->
+              <a href="https://wa.me/916374349121?text=Hi%20Rishan,%20I%20would%20like%20to%20hire%20you%20for%20a%20design%20project!"
+                target="_blank" rel="noopener noreferrer" class="contact-method-card magnetic-btn">
+                <div class="method-icon icon-glow-emerald"><i class="fa-brands fa-whatsapp"></i></div>
+                <div class="method-details">
+                  <span class="method-title">WhatsApp & Phone</span>
+                  <strong class="method-value">+91 6374349121</strong>
+                </div>
+              </a>
+
+              <!-- Location -->
+              <div class="contact-method-card non-link">
+                <div class="method-icon icon-glow-amber"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="method-details">
+                  <span class="method-title">Location</span>
+                  <strong class="method-value">India (Open to Remote Worldwide)</strong>
+                </div>
+              </div>
+            </div>
+
+            <!-- Direct Social Round Buttons -->
+            <div class="contact-socials-box">
+              <span class="social-label">Follow & Social Profiles:</span>
+              <div class="round-buttons-group">
+                <a href="https://www.linkedin.com/in/mohamed-rishan-3453951b1/" target="_blank"
+                  rel="noopener noreferrer" class="round-click-btn round-linkedin magnetic-btn" title="LinkedIn"
+                  aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/RISH360" target="_blank" rel="noopener noreferrer"
+                  class="round-click-btn round-github magnetic-btn" title="GitHub" aria-label="GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="mailto:mohamedrishan360@gmail.com" class="round-click-btn round-gmail magnetic-btn"
+                  title="Gmail" aria-label="Gmail">
+                  <i class="fa-solid fa-paper-plane"></i>
+                </a>
+                <a href="https://wa.me/916374349121" target="_blank" rel="noopener noreferrer"
+                  class="round-click-btn round-whatsapp magnetic-btn" title="WhatsApp" aria-label="WhatsApp">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-panel glass-panel" data-reveal="fade-left">
+            <h3 class="contact-panel-title">Send a Direct Message</h3>
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-name">Your Full Name *</label>
+                  <div class="input-wrap">
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" id="contact-name" name="name" placeholder="e.g. Liam Vance" required>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email">Your Email Address *</label>
+                  <div class="input-wrap">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" id="contact-email" name="email" placeholder="liam@domain.com" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-service">Required Creative Discipline</label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-sliders"></i>
+                  <select id="contact-service" name="service">
+                    <option value="ui-ux">UI/UX & Mobile / Web Design</option>
+                    <option value="branding">Brand Visual Identity & Logo Systems</option>
+                    <option value="motion">Motion Graphics & Video Editing</option>
+                    <option value="posters">Social Media Ad Creatives & Posters</option>
+                    <option value="full-time">Full-Time / Contract Designer Hiring</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Project Brief & Details *</label>
+                <div class="input-wrap textarea-wrap">
+                  <i class="fa-regular fa-comment-dots"></i>
+                  <textarea id="contact-message" name="message" rows="5"
+                    placeholder="Describe your vision, timeline, deliverables, and goals..." required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary submit-btn magnetic-btn">
+                <span>Dispatch Message</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== GIANT 'THANK YOU' SECTION MATCHING MODEL IMAGE ==================== -->
+    <section class="thank-you-section">
+      <div class="container thank-you-container">
+        <div class="thank-you-mega-wrap" data-reveal="fade-up">
+          <h2 class="thank-you-title">
+            <span class="thank-line kinetic-text" data-speed="1.2">THANK</span>
+            <span class="thank-line kinetic-text" data-speed="1.3">YOU<span class="mega-dot">.</span></span>
+          </h2>
+          <p class="thank-you-subtext">
+            For taking the time to explore my creative portfolio. Let's make something iconic together.
+          </p>
+          <div class="thank-you-actions">
+            <a href="#home" class="btn btn-glass magnetic-btn back-to-top-btn">
+              <i class="fa-solid fa-arrow-up"></i>
+              <span>Back to Top</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Mohamed Rishan. All Rights Reserved. Engineered with Futuristic Visual Standards.</p>
+        <div class="footer-quick-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== PROJECT DETAIL MODAL ==================== -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true">
+    <div class="modal-dialog glass-panel">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-content" id="modal-content-target">
+        <!-- Injected dynamically via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== RESUME PREVIEW MODAL ==================== -->
+  <div class="modal-backdrop" id="resume-modal" aria-hidden="true">
+    <div class="modal-dialog glass-panel resume-dialog">
+      <button class="modal-close" id="resume-close-btn" aria-label="Close modal">&times;</button>
+      <div class="resume-modal-header">
+        <div class="resume-title-wrap">
+          <i class="fa-solid fa-file-lines text-cyan"></i>
+          <h3>Curriculum Vitae — Mohamed Rishan</h3>
+        </div>
+        <a href="assets/Rishan_Resume.pdf" download="Rishan_Graphic_Designer_Resume.pdf"
+          class="btn btn-primary btn-sm magnetic-btn">
+          <i class="fa-solid fa-download"></i> Save PDF
+        </a>
+      </div>
+      <div class="resume-preview-body">
+        <div class="resume-paper">
+          <div class="paper-header">
+            <h2>MOHAMED RISHAN</h2>
+            <p class="paper-subtitle">Graphic Designer | UI/UX Designer | Motion Graphics Specialist</p>
+            <div class="paper-contacts">
+              <span><i class="fa-solid fa-phone"></i> +91 6374349121</span>
+              <span><i class="fa-solid fa-envelope"></i> mohamedrishan360@gmail.com</span>
+              <span><i class="fa-solid fa-location-dot"></i> India</span>
+            </div>
+          </div>
+          <hr class="paper-divider">
+          <div class="paper-section">
+            <h4>PROFESSIONAL PROFILE</h4>
+            <p>High-energy, creative Graphic Designer and UI/UX Specialist with deep proficiency across Adobe Creative
+              Suite (Photoshop, Illustrator, Premiere Pro, After Effects) and Figma. Experienced in creating complete
+              corporate identity systems, responsive digital interfaces, and viral kinetic motion content.</p>
+          </div>
+          <div class="paper-section">
+            <h4>SKILLS MATRIX</h4>
+            <p><strong>UI/UX:</strong> User Interface Design, User Experience, Wireframing, Prototyping, Responsive
+              Web/Mobile Systems, Interaction Design.</p>
+            <p><strong>Visual & Branding:</strong> Brand Identity, Typography, Color Theory, Poster Art, Social
+              Creatives, Print Design, Layout Design, Photo Editing.</p>
+            <p><strong>Motion & Video:</strong> Motion Graphics, Video Editing, Animated Social Media, Logo Animation,
+              Kinetic Typography, VFX Transitions.</p>
+          </div>
+          <div class="paper-section">
+            <h4>SOFTWARE PROFICIENCY</h4>
+            <p>Adobe Photoshop • Adobe Illustrator • Adobe Premiere Pro • Adobe After Effects • Figma • Canva Pro •
+              Lightroom • HTML5 • CSS3 • JavaScript</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+
+</html>

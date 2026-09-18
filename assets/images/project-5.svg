@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sunfixBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#451A03"/>
+    </linearGradient>
+    <linearGradient id="amberGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#sunfixBg)"/>
+  
+  <!-- Billboard Mockup -->
+  <g transform="translate(100, 70)">
+    <!-- Frame -->
+    <rect width="600" height="280" rx="8" fill="#18181B" stroke="#78350F" stroke-width="4"/>
+    <rect x="15" y="15" width="570" height="250" fill="#0F172A"/>
+    <!-- Billboard content -->
+    <rect x="40" y="45" width="520" height="190" fill="url(#amberGlow)" opacity="0.15" rx="8"/>
+    <circle cx="120" cy="120" r="45" fill="url(#amberGlow)"/>
+    <text x="120" y="128" font-family="Arial, sans-serif" font-weight="900" font-size="28" fill="#FFFFFF" text-anchor="middle">☀️</text>
+    
+    <text x="190" y="105" font-family="Arial, sans-serif" font-weight="900" font-size="32" fill="#FBBF24">SUNFIX ENERGY</text>
+    <text x="190" y="135" font-family="Arial, sans-serif" font-weight="bold" font-size="16" fill="#F8FAFC">POWERING COMMERCE WITH INFINITE SUNLIGHT</text>
+    <text x="190" y="165" font-family="Arial, sans-serif" font-size="13" fill="#CBD5E1">Commercial Rooftop Systems • Zero Carbon Future</text>
+    
+    <rect x="190" y="185" width="180" height="34" rx="6" fill="#F59E0B"/>
+    <text x="280" y="207" font-family="Arial, sans-serif" font-weight="bold" font-size="13" fill="#000000" text-anchor="middle">GET FREE AUDIT</text>
+  </g>
+
+  <!-- Billboard pillars -->
+  <rect x="250" y="350" width="30" height="80" fill="#334155"/>
+  <rect x="520" y="350" width="30" height="80" fill="#334155"/>
+
+  <text x="40" y="470" font-family="Arial, sans-serif" font-weight="900" font-size="22" fill="#FFFFFF" letter-spacing="1">SUNFIX • OUTDOOR PRINT & CORPORATE COLLATERALS</text>
+</svg>

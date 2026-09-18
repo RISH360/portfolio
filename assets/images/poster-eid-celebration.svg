@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="eidBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B"/>
+      <stop offset="45%" stop-color="#022C22"/>
+      <stop offset="100%" stop-color="#041812"/>
+    </linearGradient>
+
+    <linearGradient id="goldEid" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3A8"/>
+      <stop offset="35%" stop-color="#F59E0B"/>
+      <stop offset="70%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#FCD34D"/>
+    </linearGradient>
+
+    <filter id="eidGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="600" height="800" fill="url(#eidBg)"/>
+
+  <!-- Ornate Border Frame -->
+  <rect x="25" y="25" width="550" height="750" rx="12" fill="none" stroke="url(#goldEid)" stroke-width="1.5" opacity="0.6"/>
+  <rect x="32" y="32" width="536" height="736" rx="8" fill="none" stroke="url(#goldEid)" stroke-width="0.75" stroke-dasharray="4 6" opacity="0.4"/>
+
+  <!-- Golden Stars & Stardust -->
+  <g fill="#FDE047" opacity="0.5">
+    <circle cx="120" cy="140" r="2"/>
+    <circle cx="480" cy="180" r="2.5"/>
+    <circle cx="160" cy="320" r="2"/>
+    <circle cx="500" cy="360" r="1.5"/>
+    <circle cx="90" cy="480" r="2"/>
+    <circle cx="450" cy="540" r="2.5"/>
+  </g>
+
+  <!-- Hanging Lanterns (Fanous) -->
+  <!-- Left Lantern -->
+  <g transform="translate(140, 0)">
+    <line x1="0" y1="0" x2="0" y2="180" stroke="url(#goldEid)" stroke-width="1.5"/>
+    <circle cx="0" cy="180" r="4" fill="url(#goldEid)"/>
+    <!-- Lantern Body -->
+    <path d="M -16,190 L 16,190 L 22,230 L 14,260 L -14,260 L -22,230 Z" fill="#065F46" stroke="url(#goldEid)" stroke-width="2"/>
+    <circle cx="0" cy="225" r="14" fill="#FDE047" filter="url(#eidGlow)" opacity="0.8"/>
+    <polygon points="0,260 4,275 -4,275" fill="url(#goldEid)"/>
+  </g>
+
+  <!-- Right Lantern -->
+  <g transform="translate(460, 0)">
+    <line x1="0" y1="0" x2="0" y2="130" stroke="url(#goldEid)" stroke-width="1.5"/>
+    <circle cx="0" cy="130" r="4" fill="url(#goldEid)"/>
+    <path d="M -14,140 L 14,140 L 18,175 L 12,200 L -12,200 L -18,175 Z" fill="#065F46" stroke="url(#goldEid)" stroke-width="2"/>
+    <circle cx="0" cy="170" r="12" fill="#FDE047" filter="url(#eidGlow)" opacity="0.8"/>
+    <polygon points="0,200 4,212 -4,212" fill="url(#goldEid)"/>
+  </g>
+
+  <!-- Center Glowing Crescent Moon and 8-Point Star -->
+  <g transform="translate(300, 390)">
+    <!-- Aura -->
+    <circle cx="0" cy="0" r="140" fill="#F59E0B" opacity="0.12" filter="url(#eidGlow)"/>
+
+    <!-- Crescent Moon -->
+    <path d="M 50,-100 A 110,110 0 1 0 50,100 A 90,90 0 1 1 50,-100 Z" fill="url(#goldEid)" filter="url(#eidGlow)"/>
+
+    <!-- 8-Pointed Star -->
+    <g transform="translate(30, -20) scale(0.7)">
+      <polygon points="0,-40 10,-12 38,-12 16,6 24,34 0,18 -24,34 -16,6 -38,-12 -10,-12" fill="url(#goldEid)" filter="url(#eidGlow)"/>
+    </g>
+  </g>
+
+  <!-- Top Metadata -->
+  <text x="300" y="75" font-family="'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="12" fill="#FDE047" text-anchor="middle" letter-spacing="4">COMMUNITY CELEBRATION</text>
+
+  <!-- Title Badge -->
+  <g transform="translate(235, 100)">
+    <rect width="130" height="28" rx="14" fill="url(#goldEid)"/>
+    <text x="65" y="19" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="12" fill="#042F2E" text-anchor="middle" letter-spacing="2">CELEBRATION</text>
+  </g>
+
+  <!-- Headlines -->
+  <text x="300" y="210" font-family="'Outfit', serif" font-weight="900" font-size="64" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">EID</text>
+  <text x="300" y="270" font-family="'Outfit', serif" font-weight="900" font-size="72" fill="url(#goldEid)" text-anchor="middle" letter-spacing="3" filter="url(#eidGlow)">MUBARAK</text>
+
+  <!-- Bottom Details -->
+  <g transform="translate(300, 640)">
+    <text x="0" y="0" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="24" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">BLESSINGS & PEACE</text>
+    <text x="0" y="28" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="14" fill="#6EE7B7" text-anchor="middle">COMMUNITY GATHERING • FESTIVAL CAMPAIGN 2024</text>
+  </g>
+
+  <!-- Attribution Badge -->
+  <g transform="translate(225, 725)">
+    <rect width="150" height="24" rx="5" fill="rgba(245, 158, 11, 0.2)" stroke="#F59E0B" stroke-width="1"/>
+    <text x="75" y="16" font-family="'Space Grotesk', monospace" font-weight="700" font-size="10" fill="#FDE047" text-anchor="middle">VECTOR ILLUSTRATION</text>
+  </g>
+</svg>

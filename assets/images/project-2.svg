@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="brandBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064E3B"/>
+      <stop offset="60%" stop-color="#022C22"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#6EE7B7"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#brandBg)"/>
+  
+  <!-- Stationery & Packaging Mockups -->
+  <!-- Business Card 1 (Front) -->
+  <g transform="translate(100, 100) rotate(-8)" filter="url(#softShadow)">
+    <rect width="300" height="175" rx="12" fill="#065F46" stroke="#34D399" stroke-width="1.5"/>
+    <circle cx="60" cy="70" r="24" fill="url(#emeraldGrad)"/>
+    <path d="M52 70 L60 58 L68 70 Z" fill="#064E3B"/>
+    <text x="96" y="68" font-family="Arial, sans-serif" font-weight="bold" font-size="18" fill="#FFFFFF" letter-spacing="2">FINERGY</text>
+    <text x="96" y="86" font-family="Arial, sans-serif" font-size="10" fill="#A7F3D0" letter-spacing="3">FUTURE POWER</text>
+    <text x="40" y="145" font-family="Arial, sans-serif" font-size="10" fill="#E2E8F0">Clean Solar & Energy Innovations</text>
+  </g>
+
+  <!-- Business Card 2 (Back) -->
+  <g transform="translate(240, 180) rotate(6)" filter="url(#softShadow)">
+    <rect width="300" height="175" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="35" y="55" font-family="Arial, sans-serif" font-weight="900" font-size="16" fill="#064E3B">BRAND IDENTITY</text>
+    <text x="35" y="75" font-family="Arial, sans-serif" font-size="11" fill="#64748B">Sustainable Visual Systems</text>
+    <line x1="35" y1="90" x2="265" y2="90" stroke="#CBD5E1" stroke-width="1"/>
+    <circle cx="50" cy="115" r="10" fill="#10B981"/>
+    <rect x="70" y="110" width="120" height="10" rx="3" fill="#E2E8F0"/>
+    <circle cx="50" cy="142" r="10" fill="#3B82F6"/>
+    <rect x="70" y="137" width="150" height="10" rx="3" fill="#E2E8F0"/>
+  </g>
+
+  <!-- Product Box / Brochure 3D Isometric View -->
+  <g transform="translate(520, 100)" filter="url(#softShadow)">
+    <rect width="210" height="290" rx="16" fill="#042F2E" stroke="#10B981" stroke-width="2"/>
+    <rect x="25" y="25" width="160" height="120" rx="8" fill="#0F766E"/>
+    <circle cx="105" cy="85" r="35" fill="none" stroke="#6EE7B7" stroke-width="4"/>
+    <path d="M95 85 L105 70 L115 85 Z" fill="#6EE7B7"/>
+    <text x="35" y="180" font-family="Arial, sans-serif" font-weight="bold" font-size="16" fill="#FFFFFF">SOLAR MATRIX</text>
+    <text x="35" y="202" font-family="Arial, sans-serif" font-size="12" fill="#99F6E4">Packaging & Visual Manual</text>
+    <rect x="35" y="225" width="140" height="30" rx="6" fill="#10B981"/>
+    <text x="105" y="245" font-family="Arial, sans-serif" font-weight="bold" font-size="12" fill="#042F2E" text-anchor="middle">ECO CERTIFIED</text>
+  </g>
+
+  <text x="40" y="470" font-family="Arial, sans-serif" font-weight="900" font-size="22" fill="#FFFFFF" letter-spacing="1">FINERGY • BRAND IDENTITY & PACKAGING</text>
+</svg>
