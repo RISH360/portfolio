@@ -441,7 +441,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tools: ["Figma", "HTML5", "CSS3", "JavaScript", "Photoshop"]
     },
     'project-4': {
-      title: "Cyber Retro Wave & Party Club Night Posters",
+      title: "Labours Day Poster",
       category: "Adobe Photoshop Poster Art",
       year: "2024",
       image: "assets/images/poster-cyber-wave full view.png",
@@ -455,7 +455,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tools: ["Adobe Photoshop", "Adobe Illustrator", "Typography", "Print Specs"]
     },
     'project-5': {
-      title: "Festive Holiday & Neon Cyber Tech Product Creatives",
+      title: "Anniversary Celebration Poster",
       category: "Brand Campaign & Ad Creative Design",
       year: "2024",
       image: "assets/images/poster-xmas-festive full view.png",
@@ -483,13 +483,13 @@ document.addEventListener('DOMContentLoaded', () => {
       tools: ["Adobe After Effects", "Adobe Premiere Pro", "Kinetic Typography", "CapCut"]
     },
     'project-7': {
-      title: "KickOff Web — Sports League & Tactical Pitch App",
+      title: "KickOff Web — Sports League & Tactical Pitch",
       category: "UI/UX Mobile App Design",
       year: "2026",
       image: "assets/images/workbanner04.png",
       overview: "Comprehensive digital product designed for modern football leagues, managers, and sports analysts. Features real-time match statistics, player telemetry cards, live tactical formation boards (4-3-3, 4-2-3-1), and custom pitch visualization in high contrast dark mode.",
       deliverables: [
-        "Complete High-Fidelity Figma Mobile App System (120+ Components)",
+        "Complete High-Fidelity Figma WebSite System (120+ Components)",
         "Dark Mode Contrast Architecture & Accessibility Standards",
         "Interactive Tactical Pitch Vector Formation Tokens",
         "Micro-Interactions and Sound-Synced Transitions"
@@ -498,7 +498,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     },
     'project-8': {
-      title: "Cyber Retro Wave & Party Club Night Posters",
+      title: "Ramzan Poster",
       category: "Adobe Photoshop Poster Art",
       year: "2024",
       image: "assets/images/poster-night-party full view.png",
@@ -512,7 +512,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tools: ["Adobe Photoshop", "Adobe Illustrator", "Typography", "Print Specs"]
     },
     'project-9': {
-      title: "Festive Holiday & Neon Cyber Tech Product Creatives",
+      title: "Independance Day Poster",
       category: "Brand Campaign & Ad Creative Design",
       year: "2024",
       image: "assets/images/poster-cyber-mouse full view.png",
@@ -540,7 +540,7 @@ document.addEventListener('DOMContentLoaded', () => {
       tools: ["Figma", "Adobe Photoshop", "Adobe Illustrator", "Prototyping"]
     },
     'project-video-1': {
-      title: "Finergy Future Power — Clean Tech Commercial Motion Ad",
+      title: "UI Flow Labs — Clean Tech Commercial Motion Ad",
       category: "Commercial Motion Graphics & Video Editing",
       year: "2026",
       image: "assets/images/video-finergy-cover.png",
